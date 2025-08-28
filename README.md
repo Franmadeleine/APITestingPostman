@@ -1,57 +1,66 @@
-Este projeto é uma coleção completa de testes de API desenvolvida com Postman, focada na validação de endpoints de uma aplicação fictícia. A estrutura inclui 45 requisições independentes, organizadas em cinco pastas: User, Articles, Profile, Tags e Comments.
+🧪 API Testing Project with Postman – Practice Collection
 
-Cada requisição foi criada para simular cenários reais, cobrindo fluxos positivos, negativos e casos de borda. Os testes foram implementados na aba Tests do Postman, com validações que incluem:
+This project is a comprehensive API testing suite developed using Postman, focused on validating endpoints of a fictional application. The structure includes 45 independent requests, organized into five folders: User, Articles, Profile, Tags, and Comments.
 
-✅ Verificação do código de status
+Each request was designed to simulate real-world scenarios, covering positive flows, negative cases, and edge conditions. Tests were implemented in Postman's Tests tab, with validations that include:
 
-⏱ Tempo de resposta
+✅ Status code verification 
 
-📦 Estrutura e propriedades do corpo da resposta
+⏱ Response time measurement 
 
-⚠️ Mensagens de erro e validação
+📦 Response body structure and property checks 
 
-🔍 Destaques do projeto
-Todas as requisições são independentes, sem dependência de execução anterior.
+⚠️ Error message and validation feedback
 
-Scripts de pré-requisito foram utilizados no nível da coleção, simulando ações como cadastro, criação de artigo e postagem de comentário.
+🔍 Project Highlights
 
-Limpeza automatizada: os artigos criados durante os testes são excluídos por funções escritas nos scripts de pré-requisito, evitando acúmulo de dados no banco.
+All requests are independent, with no dependency on prior executions.
 
-Casos com falhas foram documentados com relatórios de bug no Jira, seguindo boas práticas de QA.
+Pre-request scripts were used at the collection level to simulate actions such as user registration, article creation, and comment posting.
 
-A coleção foi executada diversas vezes sem ambiente selecionado — todas as requisições passaram com sucesso.
+Automated cleanup: articles created during testing are deleted using functions written in the pre-request scripts, preventing database clutter.
 
-📂 Estrutura da Coleção
-Código
+Failed cases were documented with bug reports in Jira, following QA best practices.
+
+The collection was executed multiple times without a selected environment — all requests passed successfully.
+
+📂 Collection Structure
+
 Postman Practice [Francesca Madeleine]
+
 ├── User
+
 ├── Articles
+
 ├── Profile
+
 ├── Tags
+
 └── Comments
 
-📌 Exemplos de Endpoints Testados
-POST /users/login – Login com sucesso e cenários de erro
+📌 Sample Endpoints Tested
 
-POST /users – Cadastro com diferentes entradas inválidas
+POST /users/login – Successful login and error scenarios
 
-GET /articles – Filtros por feed e tags
+POST /users – Sign-up with various invalid inputs
 
-DELETE /articles/:slug – Validação de autorização e propriedade
+GET /articles – Feed and tag-based filtering
 
-POST /profiles/:username/follow – Funcionalidade de seguir/deixar de seguir
+DELETE /articles/:slug – Authorization and ownership validation
 
-POST /articles/:slug/comments – Criação e exclusão de comentários com validação de permissões
+POST /profiles/:username/follow – Follow/unfollow functionality
 
-🛠 Ferramentas e habilidades aplicadas
-Postman (Coleções, Tests, Scripts de pré-requisito)
+POST /articles/:slug/comments – Comment creation and deletion with permission checks
 
-Princípios RESTful
+🛠 Tools and Skills Applied
+Postman (Collections, Tests, Pre-request scripts)
 
-Testes exploratórios e negativos
+RESTful API principles
 
-Jira (documentação e rastreamento de bugs)
+Exploratory and negative testing
 
-JSON, métodos HTTP, códigos de status
+Jira (bug tracking and documentation)
 
-Documentação de testes e design de casos de teste
+JSON, HTTP methods, status codes
+
+Test documentation and case design
